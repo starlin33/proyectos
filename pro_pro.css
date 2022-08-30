@@ -1,0 +1,405 @@
+@fon-face{
+    fon-family: fuente;
+    src: url(fonts/nevis.eot);
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"),
+        url("fonts/nevis.woff") format("woff"),
+        url("fonts/nevis.ttf") format("truetype"),
+        url("fonts/nevis.svg") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+*{
+    margin: 0px;
+    padding: opx;
+    text-decoration: none;
+    box-sizing: border-box;
+ 
+}
+body{
+    background-image: url(img/paven.png);
+}
+
+#header{
+    min-width:1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+}
+
+#header #logotipo{
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 20px;
+  
+}
+
+#header #logotipo img{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width:140px ;
+}
+
+#header h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+    margin-top:10px;
+    text-shadow: 0px 2px 1px #333;
+    transition:all 300ms;
+}
+
+#header h1:hover{
+    text-shadow: 0px 2px 1px #333, 0px 0px 4px #70b231;
+}
+
+header h1 > a{
+    color: #70b231;
+}
+
+#nav{
+    width:100%;
+    height: 40px;
+    background-color: #333;
+    font-family:sans-serif,helvetica,arial;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#nav ul{
+    margin:  0px auto;
+    width: 1130px;
+    
+    
+}
+
+
+#nav > ul > li{
+
+    display:block;
+    float: left;
+    line-height: 40px;
+    margin:  0px auto;
+    border-right: 2px solid grey;
+    transition: all 300ms;
+
+}
+
+#nav > ul > li >a{
+    color: white;
+    padding: 20px;
+
+}
+
+#nav > ul > li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px green inset;
+}
+
+#nav > ul > li > ul{
+  display: none;
+  position: absolute;
+  width: 108px;
+  box-shadow: 0px 2px 2px gray;
+  z-index: 1;
+  list-style: none;
+  background-color: #f2f1f0 ;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 0px;
+  
+}
+
+#nav > ul > li:hover > ul{
+    display: block;
+    
+    
+ 
+}
+
+#nav > ul > li > ul > li > a{
+    color: gray;
+    font-size: 13px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: block;
+   
+    
+}
+
+#nav > ul > li:hover > ul > li:hover{
+    box-shadow: 0px 0px 6px rgb(129, 128, 128) inset;
+   background-color: #ccc;
+    
+}
+
+
+
+#nav > ul > li > ul > li{
+    border-bottom: 2px solid rgb(199, 191, 191) ;
+
+}
+ /*barra lateral*/
+
+#content{
+    width: 1250px;
+    min-width: 1100px;
+    margin:0px auto;
+}
+
+#aside, .frase{
+    width: 225px;
+    float: left;
+    margin:30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: sans-serif,arial,helvetica;
+
+}
+
+#aside .widget{
+    display: block;
+    width: 200px;
+    padding: 8px 10px;
+    border-bottom: 2px dashed #ccc;
+}
+
+#aside .widget:last-child{
+    margin-bottom: 20px;
+}
+
+#aside  h3{
+    width: 100%;
+    text-align: center;
+    border-bottom:1px solid #ccc ;
+    border-top:1px solid #ccc ;
+    background-color: #F2F3F2 ;
+    margin: 10px 0px 20px 0px;
+}
+
+.blu{
+color:hsl(213deg 91% 50%);
+}
+
+.red{
+color:hsl(1deg 64% 37%) ;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select{
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 2px #ccc inset;
+    padding: 2px 15px;
+    margin: 6px 0px;
+    color: gray;
+    transition: all 300ms;
+    background-color: white;
+}
+ 
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus{
+    border:1px dashed #70b231;
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: block;
+    border-radius: 3px;
+    width: 60px;
+    background-color: #70b231;
+    padding: 3px;
+    border: green;
+    cursor: pointer;
+    color: white;
+    margin-bottom:5px ;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover{
+  box-shadow: 0px 0px 2px gray;
+
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active{
+  box-shadow: 0px 0px 3px gray inset;
+  text-shadow:0px 0px 1px #ccc ;
+  
+}
+
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a{
+    display: block;
+    margin: top 2px;
+    margin-bottom: 5px;
+}
+#aside div label{
+    text-align: center;
+}
+
+#aside div a{
+    display: block;
+    margin: 2px 0px 2px 0px;
+}
+
+#aside input,
+#aside label{
+    margin: 0 auto;
+    text-align:center;
+}
+
+a{
+    color: #529125;
+}
+
+a:hover{
+    color: #285616;
+}
+
+#aside li{
+   margin: 8px 0px;
+   list-style: square;
+   
+}
+
+.frases{
+    margin: 10px 10px 10px 10px;
+    clear: both;
+}
+.pon{
+    width: 100%;
+    text-align: center; 
+}
+
+#section{
+    width: 75%;
+    float: right;
+    font-family: sans-serif,arial,helvetica;
+   
+
+}
+
+.front-end{
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    background-color: white;
+    margin: 30px 0px 0px 0px;
+}
+
+.back-end{
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    background-color: white;
+    margin: 30px 0px 0px 0px;
+}
+
+.Frameworks{
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    background-color: white;
+    margin: 30px 0px 0px 0px;
+    margin-bottom: 30px;
+}
+
+.titulo{
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ccc;
+    margin-top: -10px;
+}
+
+#section section{
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 16px;
+    overflow: hidden;
+    color: #333333;
+}
+
+#section article{
+    margin:20px 0px 20px 15px;
+}
+
+.par{
+    color: #408302;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#parra{
+color:#333;
+font-weight: bold;
+}
+ 
+
+ #parraa{
+    color: #9B2422;
+    font-weight: bold;
+ }
+
+ #parraaa{
+    color:#D69D2A;
+    font-weight: bold;
+ }
+
+ .sticker1, .sticker2{
+    position: absolute ;
+    margin-top: -38px;
+    z-index: 0;
+ }
+
+ .sticker2{
+    margin-left: 64%;
+ }
+
+footer{
+    background-color: #333;
+   
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#historia{
+    float: right;
+    margin: 0px 47px 20px 20px;
+
+}
+
+.mando{
+    height: 65px;
+    width: 100% !important;
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+.est{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+button{
+    margin: 0 auto;
+}

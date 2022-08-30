@@ -1,0 +1,84 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /*background-image: url(img/paven.png) ;*/
+}
+
+
+header > nav{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #d2cfbd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    box-shadow: 0px 0px 4px #333 inset;
+    
+}
+
+h1{
+    text-align: center;
+    line-height: 193px;
+    color: #70b231;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0px 2px 1px #333, 0px 0px 4px 
+}
+
+#container{
+    margin: 20px;
+}
+
+iframe{
+    width: 500px;
+    height: 300px;
+}
+
+article{
+    display: block;
+    float: left;
+    margin: 20px;
+}
+
+.tt{
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 40px;
+    
+    }
+
+h2{
+    margin: 40px;
+    line-height: 40px;
+}
+
+.clearflix{
+    clear: both;
+}
+
+.ee{
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 40px;
+    margin: 20px;
+}
+
+footer{
+    background-color: #dedada;
+    width: 100%;
+    height: 60px;
+}
+
+p{
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+
+
